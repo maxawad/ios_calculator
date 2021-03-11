@@ -2,4 +2,4 @@
 
 To access this, you'll have to click in the following [here](https://calculatorcapital.herokuapp.com/)
 
-Images to be added soon...
+![Calculator Image](https://github.com/maxawad/ios_calculator/blob/master/readme_imgs/calc.png?raw=true)
