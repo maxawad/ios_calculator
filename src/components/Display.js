@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
-import { NumberContext } from "./NumberProvider";
+import React, { useContext } from 'react';
+import { NumberContext } from './NumberProvider';
 
-import "./styles.css";
+import './styles.css'
 
 const Display = () => {
-  const { number, storedNumber, functionType } = useContext(NumberContext);
+  const { number, storedNumber, show } = useContext(NumberContext);
   return (
-    <div>
-      <h2 className={storedNumber && storedNumber.length > 12 ? "long-main-display" : undefined}>
-        {!number.length && !storedNumber ? "0" : number || storedNumber}
-      </h2>
+    <div className="number">
+      {show === 'num' ? number || '0' : storedNumber}
     </div>
   );
 };

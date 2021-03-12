@@ -6,10 +6,6 @@
   justify-items: center;
   grid-template-rows: minmax(200px 350px) 1fr;
   grid-template-columns: 1fr;
-  @media (max-width: 500px) {
-    max-width: 90%;
-    padding: 5%;
-  }
 }
 
 .calculator .display {
@@ -18,13 +14,15 @@
   color: white;
   text-align: right;
   height: 20px;
-  @media (max-width: 500px) {
-    font-size: 2rem;
-  }
 }
 
-.calculator .display h2 { text-align: center }
-.calculator .display p { text-align: center }
+.calculator .display .number {
+  margin-top: 170px;
+  font-size: 150px;
+  position: relative;
+  text-align: right;
+}
+
 .calculator .number-pad {
   /* grid-area: numbers; */
   display: grid;
@@ -71,4 +69,10 @@
 
 .calculator .zero-button button {
   border-radius: 50px;
+  text-align: left;
+}
+
+.calculator .zero-button button span {
+  left: 25px;
+  position: relative;
 }
