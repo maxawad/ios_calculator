@@ -2,6 +2,7 @@
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
